@@ -1,6 +1,5 @@
 {
   "name": "curso-basico-js-poo",
-  "type": "module",
   "version": "1.0.0",
   "description": "Made as part of Basic Course of OOP (Object oriented programming) in JS",
   "main": "main.js",

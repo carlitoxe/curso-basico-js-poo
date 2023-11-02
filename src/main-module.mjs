@@ -1,7 +1,7 @@
-import Course from './classes/course.js'
-import Student from './classes/student.js'
-import LearningPath from './classes/learningPath.js'
-import Teacher from './classes/teacher.js'
+import Course from '../classes/course.js'
+import Student from '../classes/student.js'
+import LearningPath from '../classes/learningPath.js'
+import Teacher from '../classes/teacher.js'
 
 // Teachers
 const juanDC = new Teacher({
@@ -28,6 +28,8 @@ const basicProg = new Course({
     name: "Course of Basic Programming",
     teacher: juanDC
 })
+
+console.log(basicProg);
 
 const defCourseHTML = new Course({
     id: 'def-html-css',
@@ -108,7 +110,7 @@ const miguelito = new Student({
     ]
 })
 
-console.log(webDev);
+// console.log(webDev);
 
 
 

@@ -6,9 +6,21 @@ export default class Course {
         lessons = []
     }) {
         this.id = id;
-        this.name = name;
+        this._name = name;
         this.teacher = teacher;
         this.lessons = lessons;
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(newName) {
+        if (newName && typeof newName === "string") {
+            this._name = newName;
+        } else {
+            console.error('The name has to be a string and cant be empty')
+        }
     }
 }
 
